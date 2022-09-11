@@ -1,5 +1,6 @@
 
 import './App.css';
+import ErreOndeNinguemErrou from './ErreOndeNinguemErrou';
 import PropositoDecide from './PropositoDecide';
 import SejaTransformador from './SejaTransformador';
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <PropositoDecide/>
       <SejaTransformador/>
+      <ErreOndeNinguemErrou/>
     </div>
   );
 }
