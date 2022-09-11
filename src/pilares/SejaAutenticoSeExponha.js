@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, CardActions, Button } from "@mui/material";
 
 export default function SejaautenticoSeExponha() {
   return (
@@ -11,7 +11,7 @@ export default function SejaautenticoSeExponha() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh5.googleusercontent.com/77ZlRtzRA1LemaxkERlbls6nZMGXom7ACd5cabub_SjfeOQ3iyQSR7ZeIbSlJmd7Hhd5l7odqP9wG9xw9S4k7H8X4dConekooQF_67vp0FbLXCvNkwyu9v70znZi_iK1nQ=w1280"
           alt="green iguana"
         />
@@ -38,6 +38,11 @@ export default function SejaautenticoSeExponha() {
             Confiamos em seu bom critério.
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );

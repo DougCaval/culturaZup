@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, CardActions, Button } from "@mui/material";
 
 export default function VaiQueDaConfia() {
   return (
@@ -11,7 +11,7 @@ export default function VaiQueDaConfia() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh4.googleusercontent.com/3glsjoVwPiKBrA-2Z7q5nY0k0AJsf80I03UEH40oPaGnPQL-io5O6fAukaHzc4ElUo-TZJU-yotW393PA4PyuCvGvGITfYww1IQHEMEA2yEPKRK2hEVJr2mmAck4ETZFrg=w1280"
           alt="green iguana"
         />
@@ -36,6 +36,11 @@ export default function VaiQueDaConfia() {
             mova ações rápidas. Vai que dá!!!
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );

@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, CardActions, Button} from "@mui/material";
 
 export default function ZupperAjudaZupper() {
   return (
@@ -11,7 +11,7 @@ export default function ZupperAjudaZupper() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh3.googleusercontent.com/IwUzdOQmvgcYwGQ9YizhJ-5ulutkhULsiGG5Eu-T1s-U44wINdAgB4szeegza_j6QyfCAxRU1O7wKXFkPfYiredd_nVrNEp-EvX25v5wcBeHa6VBlYBZYZLAxP4t4KkjkA=w1280"
           alt="green iguana"
         />
@@ -36,6 +36,11 @@ export default function ZupperAjudaZupper() {
             unimos propósitos.
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );

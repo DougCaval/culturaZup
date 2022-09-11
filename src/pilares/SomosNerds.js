@@ -5,28 +5,29 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions, Button } from "@mui/material";
 
-export default function SomosColaborativos() {
+export default function SomosNerds() {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="200"
-          image="https://lh4.googleusercontent.com/hF310VrY1SIHj0aBn7c_Pcu2KSzgGAdpH5bB4d0yphFD_0tsX8mkM6OITYU48Fz2k6v339_6OeuRejMlM9oIQtRAIW1Ix78V6E9X3_o34sODdibkHUsMy8vsHnljnOvgyg=w1280"
+          image="https://lh3.googleusercontent.com/1hX4MURj42IT8l_nSPmZPozMPIm78c1Kwjh_9wHH7JhabhpZmdsdQSc-ZUhiZ3TcWsWz4C1OWiaPE0GBSf3PCl1RyiaVS2r28bpXU0p6UgbFszuLLmzsC7Jh7uBQUBV5gA=w1280"
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Somos Colaborativos
+            Somos Nerds
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Tão importante quanto criar, é adotar boas soluções e por fim
-            co-criar soluções ainda melhores. Valorizamos quem adota e dissemina
-            tech foundations, frameworks, modos de trabalho e ritos de outros
-            times e os ajudam a co-criar algo ainda melhor. Isto aumenta a
-            qualidade por diferentes pessoas olharem a mesma solução, gera
-            ambiente colaborativo e estimula o compartilhamento e reuso de boas
-            soluções.
+            O nível técnico tem uma relação direta com a qualidade, eficiência e
+            velocidade do que entregamos. Mantenha-se atualizado e tenha
+            conhecimento profundo da parte técnica do seu trabalho. Isto não
+            quer dizer que conhecimento técnico é limitado aos times de
+            tecnologia. Domine tecnicamente seu trabalho, o princípio é o mesmo
+            para todas as áreas da Zup, ou seja, financeiro, jurídico, rh e etc.
+            Criamos tecnologia e se criamos, precisamos de altíssimo nível
+            técnico.
           </Typography>
         </CardContent>
         <CardActions>

@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, CardActions, Button } from "@mui/material";
 
 export default function ResolvaOProblemaCerto() {
   return (
@@ -11,7 +11,7 @@ export default function ResolvaOProblemaCerto() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh5.googleusercontent.com/bOLZ95uUpkp4m4--XzwrqCuObqcB4vq-eJF8q8_bDTRedBiGI2nkm_zFtPu3dubMoG80dclhSrPkY3pFMWEOpyzr7-hxwJl6h7LmLFfZw892p3lXPHG8a4lrIYBYuXd9LQ=w1280"
           alt="green iguana"
         />
@@ -34,6 +34,11 @@ export default function ResolvaOProblemaCerto() {
             encontrar o melhor problema.
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );

@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, CardActions, Button } from "@mui/material";
 
 export default function RespeitoEInclusao() {
   return (
@@ -11,7 +11,7 @@ export default function RespeitoEInclusao() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh3.googleusercontent.com/exdSDC8hK3HP17zNi7v0kYWqdN8ZcLSl4Siwh7vIdrvXhTdWloQhkGo-Ml6ceOVTET4B3XYZTm6DGswqx4ywpYphYoFi3TpTUZqD5r6JeTnRPj5WIo8CZ-o6ZFVSkDkOhw=w1280"
           alt="green iguana"
         />
@@ -33,6 +33,11 @@ export default function RespeitoEInclusao() {
             mesmo e será respeitado por isso.
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );

@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea , CardActions, Button} from "@mui/material";
 
 export default function SomosGuardioes() {
   return (
@@ -11,7 +11,7 @@ export default function SomosGuardioes() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh4.googleusercontent.com/yTHKzFB1zNHX7nJDA4dcNM2mx0kNvrLYk2bns4qXpc7LF0YRf6AcdgN37x2RX1rgQkRvgyVbV1kjOlB8LWpyxkdtlkWRkCDUf6O_ew4Af0WzF9qZbb9e46StGxswx1NPQQ=w1280"
           alt="green iguana"
         />
@@ -34,6 +34,11 @@ export default function SomosGuardioes() {
             acesso!
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );

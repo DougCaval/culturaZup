@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, CardActions, Button } from "@mui/material";
 
 export default function TimeForaDaCurva() {
   return (
@@ -11,7 +11,7 @@ export default function TimeForaDaCurva() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="200"
           image="https://lh3.googleusercontent.com/1z2EegjgAXEx0QY1jUiY4TVF6_PxpSJ3TENBMli8Qi4-wClBuCWkLICcvarSOEJoncvMhdMazmm35bU8LOTbx4tIlOtSId87gBi-d7CtWlRm25z5XR6ZhebFFKczQSMDmQ=w1280"
           alt="green iguana"
         />
@@ -41,6 +41,11 @@ export default function TimeForaDaCurva() {
             sonho para dar e ponderar os feedbacks.
           </Typography>
         </CardContent>
+        <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
       </CardActionArea>
     </Card>
   );
