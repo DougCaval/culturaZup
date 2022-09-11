@@ -17,7 +17,7 @@ export default function PropositoDecide() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            O proósito Decide
+            O propósito Decide
           </Typography>
           <Typography variant="body2" color="text.secondary">
             Sempre opte por ações que transformem nosso propósito em realidade,

@@ -1,13 +1,13 @@
 .App {
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
-  white-space: initial;
   
-  
+ 
 }
+
 .Card {
   display: flex;
   flex-direction: column;
@@ -17,11 +17,5 @@
   white-space: initial;
   padding: 60px;
   bottom: 60px;
+  
 }
-
-
-
-
-
-
-

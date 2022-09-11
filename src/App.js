@@ -18,7 +18,8 @@ import CustomerLovers from "./pilares/CustomerLovers";
 
 function App() {
   return (
-    <div>
+
+    <div className="App">
       <CultureAppBar />
       <div className="Card">
         <PropositoDecide />
