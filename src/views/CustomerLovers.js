@@ -19,10 +19,10 @@ export default function CustomerLovers() {
           ></img>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Somos Customer Lovers
+              Customer Lovers
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Somos apaixonados pelo cliente e juntos transformamos o futuro da
+              Somos apaixonados pelo sucesso do cliente e juntos transformamos o futuro da
               tecnologia.
             </Typography>
           </CardContent>
