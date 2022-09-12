@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button} from "@mui/material";
+import { CardActionArea, CardActions} from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import zupperajudazupper from "../img/zupperajudazupper.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function ZupperAjudaZupper() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh3.googleusercontent.com/IwUzdOQmvgcYwGQ9YizhJ-5ulutkhULsiGG5Eu-T1s-U44wINdAgB4szeegza_j6QyfCAxRU1O7wKXFkPfYiredd_nVrNEp-EvX25v5wcBeHa6VBlYBZYZLAxP4t4KkjkA=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={zupperajudazupper}
+          width="400px"
+          height="300px"
+          alt="zupper ajuda zupper"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Zupper ajuda zupper
@@ -37,11 +40,10 @@ export default function ZupperAjudaZupper() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+        <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

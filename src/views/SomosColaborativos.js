@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions} from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import somoscolaborativos from "../img/somoscolaborativos.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function SomosColaborativos() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh4.googleusercontent.com/hF310VrY1SIHj0aBn7c_Pcu2KSzgGAdpH5bB4d0yphFD_0tsX8mkM6OITYU48Fz2k6v339_6OeuRejMlM9oIQtRAIW1Ix78V6E9X3_o34sODdibkHUsMy8vsHnljnOvgyg=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={somoscolaborativos}
+          width="400px"
+          height="300px"
+          alt="somos colaborativos"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Somos Colaborativos
@@ -30,11 +33,10 @@ export default function SomosColaborativos() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+          <SocialButtonGroup/>
         </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import respeitoeinclusao from "../img/respeitoeinclusao.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function RespeitoEInclusao() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh3.googleusercontent.com/exdSDC8hK3HP17zNi7v0kYWqdN8ZcLSl4Siwh7vIdrvXhTdWloQhkGo-Ml6ceOVTET4B3XYZTm6DGswqx4ywpYphYoFi3TpTUZqD5r6JeTnRPj5WIo8CZ-o6ZFVSkDkOhw=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={respeitoeinclusao}
+          width="400px"
+          height="300px"
+          alt="respeito e inclusão"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Respeito e inclusão
@@ -34,11 +37,10 @@ export default function RespeitoEInclusao() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+        <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

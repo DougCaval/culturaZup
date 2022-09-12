@@ -1,20 +1,18 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import aprendizadoacimadoplano from "../img/aprendizadoacimadoplano.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function AprendizadoAcimaDoPlano() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
+    <Card sx={{ maxWidth: 345 }} className="Card">
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh4.googleusercontent.com/-X_juPhCfEpexB4ZTEm9P-qI72mfyZbU9JiRerBYGmc92G_QxX5fMOl4ZbyTPOk1pTYBvmuAVHY0n7pJHh3bqA4VsgJH1w_krToFGDArIcs3ah1ej51A1i6GzWHJGAtOFA=w1280"
-          alt="green iguana"
-        />
+        <img src={aprendizadoacimadoplano} width="400px" height="300px" alt="aprendizado acima do plano"></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Aprendizado acima do plano
@@ -32,11 +30,10 @@ export default function AprendizadoAcimaDoPlano() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+          <SocialButtonGroup/>
         </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

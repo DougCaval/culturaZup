@@ -5,8 +5,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 
-export default function CultureAppBar() {
+export default function Home() {
   return (
+    
     <Box sx={{ flexGrow: 2 }}>
       <AppBar position="relative" >
         <Toolbar>
@@ -16,5 +17,6 @@ export default function CultureAppBar() {
         </Toolbar>
       </AppBar>
     </Box>
+   
   );
 }

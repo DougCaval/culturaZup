@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import sejatransformador from "../img/sejatransformador.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function SejaTransformador() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh4.googleusercontent.com/WmBQc--w1N8wExnSAfQD62O2I-aFXosCFd-Hlh3Qx8bFHD7__Q1QkAlzXwsagzm4FPva6nNAy02YNYsFLZ9d-QjGnrCD1NkGFpredqnYUxEGZIlYwvxmPKN-mK8IYAkWFA=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={sejatransformador}
+          width="400px"
+          height="300px"
+          alt="seja transformador"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Seja Transformador
@@ -29,11 +32,10 @@ export default function SejaTransformador() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+          <SocialButtonGroup/>
         </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

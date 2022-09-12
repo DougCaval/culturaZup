@@ -1,20 +1,25 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions} from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import resolvaoproblemacerto from "../img/resolvaoproblemacerto.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
+
+
 
 export default function ResolvaOProblemaCerto() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh5.googleusercontent.com/bOLZ95uUpkp4m4--XzwrqCuObqcB4vq-eJF8q8_bDTRedBiGI2nkm_zFtPu3dubMoG80dclhSrPkY3pFMWEOpyzr7-hxwJl6h7LmLFfZw892p3lXPHG8a4lrIYBYuXd9LQ=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={resolvaoproblemacerto}
+          width="400px"
+          height="300px"
+          alt="resolva o problema certo"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Resolva o problema certo
@@ -35,11 +40,10 @@ export default function ResolvaOProblemaCerto() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+       <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

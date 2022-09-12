@@ -1,20 +1,18 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import propositodecide from "../img/propositodecide.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function PropositoDecide() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh3.googleusercontent.com/doELj2UQmTK2O2dXi3V2BfVF7LxuSa8JbvO7uynkd35VwDkQlHK5JM_ER5tVEkP4Tv0eUJ_hHjtpoEB5TDklZicw5WeMHPgZ5mwa_4IGiOPrXn6LjTiBwBIcOkdtkBZN=w1280"
-          alt="green iguana"
-        />
+      <img src={propositodecide} width="400px" height="300px" alt="o proposito decide"></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             O propósito Decide
@@ -29,11 +27,10 @@ export default function PropositoDecide() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+          <SocialButtonGroup/>
         </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

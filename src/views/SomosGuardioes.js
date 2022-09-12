@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea , CardActions, Button} from "@mui/material";
+import { CardActionArea , CardActions} from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import somosguardioes from "../img/somosguardioes.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function SomosGuardioes() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh4.googleusercontent.com/yTHKzFB1zNHX7nJDA4dcNM2mx0kNvrLYk2bns4qXpc7LF0YRf6AcdgN37x2RX1rgQkRvgyVbV1kjOlB8LWpyxkdtlkWRkCDUf6O_ew4Af0WzF9qZbb9e46StGxswx1NPQQ=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={somosguardioes}
+          width="400px"
+          height="300px"
+          alt="somos guardioes"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Somos Guardiões
@@ -35,11 +38,10 @@ export default function SomosGuardioes() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+       <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

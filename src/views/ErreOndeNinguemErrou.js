@@ -1,20 +1,24 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import erreondeninguemerrou from "../img/erreondeninguemerrou.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
+
 
 export default function ErreOndeNinguemErrou() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh4.googleusercontent.com/67DsPzp5NJFwu5CQ88rvd0j2Y0PqwDnIK2UF7e5dA8td0c4hC_LIMnyCT3LTnZXXsRLSq_I_KD4zAlaWNMBYyV8y0D4hhytVkCtYDagp9bo5to2co9zJ_MDGxuG5m0Fc_A=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={erreondeninguemerrou}
+          width="400px"
+          height="300px"
+          alt="erre onde ninguém errou"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Erre onde ninguém errou
@@ -29,11 +33,10 @@ export default function ErreOndeNinguemErrou() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+         <SocialButtonGroup/>
         </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import vaiquedaconfia from "../img/vaiquedaconfia.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function VaiQueDaConfia() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh4.googleusercontent.com/3glsjoVwPiKBrA-2Z7q5nY0k0AJsf80I03UEH40oPaGnPQL-io5O6fAukaHzc4ElUo-TZJU-yotW393PA4PyuCvGvGITfYww1IQHEMEA2yEPKRK2hEVJr2mmAck4ETZFrg=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={vaiquedaconfia}
+          width="400px"
+          height="300px"
+          alt="vai que dá , confia!"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Vai que dá! Confia 
@@ -37,11 +40,10 @@ export default function VaiQueDaConfia() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+        <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

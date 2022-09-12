@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions} from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import somosnerds from "../img/somosnerds.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function SomosNerds() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh3.googleusercontent.com/1hX4MURj42IT8l_nSPmZPozMPIm78c1Kwjh_9wHH7JhabhpZmdsdQSc-ZUhiZ3TcWsWz4C1OWiaPE0GBSf3PCl1RyiaVS2r28bpXU0p6UgbFszuLLmzsC7Jh7uBQUBV5gA=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={somosnerds}
+          width="400px"
+          height="300px"
+          alt="somos nerds"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Somos Nerds
@@ -31,11 +34,10 @@ export default function SomosNerds() {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
-            Share
-          </Button>
+          <SocialButtonGroup/>
         </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

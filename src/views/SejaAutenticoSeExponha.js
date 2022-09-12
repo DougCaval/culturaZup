@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import sejaautenticoseexponha from "../img/sejaautenticoseexponha.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function SejaautenticoSeExponha() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh5.googleusercontent.com/77ZlRtzRA1LemaxkERlbls6nZMGXom7ACd5cabub_SjfeOQ3iyQSR7ZeIbSlJmd7Hhd5l7odqP9wG9xw9S4k7H8X4dConekooQF_67vp0FbLXCvNkwyu9v70znZi_iK1nQ=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={sejaautenticoseexponha}
+          width="400px"
+          height="300px"
+          alt="seja autêntico se exponha"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Seja autêntico, se exponha
@@ -39,11 +42,10 @@ export default function SejaautenticoSeExponha() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+        <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }

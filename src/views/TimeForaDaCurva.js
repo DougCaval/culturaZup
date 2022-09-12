@@ -1,20 +1,23 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea, CardActions, Button } from "@mui/material";
+import { CardActionArea, CardActions } from "@mui/material";
+import SocialButtonGroup from "../components/Buttons";
+import timeforadacurva from "../img/timeforadacurva.png"
+import Grid from "@mui/system/Unstable_Grid/Grid";
 
 export default function TimeForaDaCurva() {
   return (
+    <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          height="200"
-          image="https://lh3.googleusercontent.com/1z2EegjgAXEx0QY1jUiY4TVF6_PxpSJ3TENBMli8Qi4-wClBuCWkLICcvarSOEJoncvMhdMazmm35bU8LOTbx4tIlOtSId87gBi-d7CtWlRm25z5XR6ZhebFFKczQSMDmQ=w1280"
-          alt="green iguana"
-        />
+      <img
+          src={timeforadacurva}
+          width="400px"
+          height="300px"
+          alt="time fora da curva"
+        ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Time fora da curva
@@ -42,11 +45,10 @@ export default function TimeForaDaCurva() {
           </Typography>
         </CardContent>
         <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
+        <SocialButtonGroup/>
       </CardActions>
       </CardActionArea>
     </Card>
+    </Grid>
   );
 }
