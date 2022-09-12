@@ -16,7 +16,7 @@ export default function SomosColaborativos() {
           src={somoscolaborativos}
           width="400px"
           height="300px"
-          alt="somos colaborativos"
+          alt="'cone de quatro pessoas ao redor de uma pesa com balões de pensamentos discutindo e falando a repseito de idéias'"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

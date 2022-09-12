@@ -12,7 +12,7 @@ export default function AprendizadoAcimaDoPlano() {
     <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }} className="Card">
       <CardActionArea>
-        <img src={aprendizadoacimadoplano} width="400px" height="300px" alt="aprendizado acima do plano"></img>
+        <img src={aprendizadoacimadoplano} width="400px" height="300px" alt="imagem ícone de um notebook aberto e o ícone de uma mulher apontando para um gráfico"></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Aprendizado acima do plano

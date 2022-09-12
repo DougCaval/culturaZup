@@ -12,7 +12,7 @@ export default function PropositoDecide() {
     <Grid container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px">
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-      <img src={propositodecide} width="400px" height="300px" alt="o proposito decide"></img>
+      <img src={propositodecide} width="400px" height="300px" alt="'Ícone de um home olhando para o alto de uma montanha com uma luneta, no alto da montanha tem uma bandeira verde'"></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             O propósito Decide

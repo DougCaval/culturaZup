@@ -16,7 +16,7 @@ export default function TimeForaDaCurva() {
           src={timeforadacurva}
           width="400px"
           height="300px"
-          alt="time fora da curva"
+          alt="Ícone mostrando algumas pessoas levantando um gráfico frente a um programa de computador com engrenagens e formulários simulando uma dashboard"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

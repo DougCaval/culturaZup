@@ -16,7 +16,7 @@ export default function RespeitoEInclusao() {
           src={respeitoeinclusao}
           width="400px"
           height="300px"
-          alt="respeito e inclusão"
+          alt="'cones de vários pessoas de diferentes raças, nacionalidades todas juntas formando um grupo único'"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

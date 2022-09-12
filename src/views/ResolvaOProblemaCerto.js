@@ -18,7 +18,7 @@ export default function ResolvaOProblemaCerto() {
           src={resolvaoproblemacerto}
           width="400px"
           height="300px"
-          alt="resolva o problema certo"
+          alt="Um ícone de uma home e um ícone de uma mulher frente a um poste com três placas sinalizando caminhos diferentes"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

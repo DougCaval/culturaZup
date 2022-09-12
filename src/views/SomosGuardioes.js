@@ -16,7 +16,7 @@ export default function SomosGuardioes() {
           src={somosguardioes}
           width="400px"
           height="300px"
-          alt="somos guardioes"
+          alt="Ícone de duas pessoas em poisção de mdeitação e simbolos : escudo, logo da zup e cadeado sobre suas cabeças'"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

@@ -15,7 +15,7 @@ export default function CustomerLovers() {
             src={customerlovers}
             width="400px"
             height="300px"
-            alt="customer lovers"
+            alt="Banner apresentado na ZupCon com o Texto :  Somos Customer lovers"
           ></img>
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">

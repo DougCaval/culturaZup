@@ -16,7 +16,7 @@ export default function SejaautenticoSeExponha() {
           src={sejaautenticoseexponha}
           width="400px"
           height="300px"
-          alt="seja autêntico se exponha"
+          alt="Ícone de um homem usando uma capa vermelha frente ao desenho de uma seta laranja que passa por baixo e aponta para cima no seu final"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

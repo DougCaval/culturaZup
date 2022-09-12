@@ -16,7 +16,7 @@ export default function SomosNerds() {
           src={somosnerds}
           width="400px"
           height="300px"
-          alt="somos nerds"
+          alt="'cone de pessoas em diferentes sittuações mas que exigem um conhecimento intelectual na execução das atividades'"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

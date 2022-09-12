@@ -16,7 +16,7 @@ export default function ZupperAjudaZupper() {
           src={zupperajudazupper}
           width="400px"
           height="300px"
-          alt="zupper ajuda zupper"
+          alt="Ícone de duas pessoas juntas montando um quebra cabeça '"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

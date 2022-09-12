@@ -17,7 +17,7 @@ export default function ErreOndeNinguemErrou() {
           src={erreondeninguemerrou}
           width="400px"
           height="300px"
-          alt="erre onde ninguém errou"
+          alt="Imagem com o ícone de um homem segurando o componente de desenvolviemnto na frente de um monitor com uma aplicação na tela "
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

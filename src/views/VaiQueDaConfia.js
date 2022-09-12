@@ -16,7 +16,7 @@ export default function VaiQueDaConfia() {
           src={vaiquedaconfia}
           width="400px"
           height="300px"
-          alt="vai que dá , confia!"
+          alt="Ícone de uma mulher sentada em um foguete que está en ascenção , segurando uam bandeira verde na mão direita"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

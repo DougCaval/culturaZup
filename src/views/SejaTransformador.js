@@ -16,7 +16,7 @@ export default function SejaTransformador() {
           src={sejatransformador}
           width="400px"
           height="300px"
-          alt="seja transformador"
+          alt="Ícone de um home e uma mulher frente a um quadro com o desneho de uma cabeça humana verde com o desenho de uma lâmpada em cima'"
         ></img>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
