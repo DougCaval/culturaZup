@@ -12,7 +12,7 @@ export default function Home() {
       <AppBar position="relative" >
         <Toolbar>
           <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-            Zup Pocket Culture
+            Pocket Zup  Culture
           </Typography>
         </Toolbar>
       </AppBar>
