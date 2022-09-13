@@ -6,6 +6,7 @@ import { CardActionArea, CardActions } from "@mui/material";
 import SocialButtonGroup from "../components/Buttons";
 import aprendizadoacimadoplano from "../img/aprendizadoacimadoplano.png"
 import Grid from "@mui/system/Unstable_Grid/Grid";
+import { Button } from "@mui/material";
 
 export default function AprendizadoAcimaDoPlano() {
   return (
@@ -31,6 +32,7 @@ export default function AprendizadoAcimaDoPlano() {
         </CardContent>
         <CardActions>
           <SocialButtonGroup/>
+          <Button variant="contained" aria-label="Botão voltar para home" color="warning" href="/">Voltar</Button>
         </CardActions>
       </CardActionArea>
     </Card>

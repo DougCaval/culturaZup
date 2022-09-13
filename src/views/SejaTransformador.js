@@ -6,6 +6,7 @@ import { CardActionArea, CardActions } from "@mui/material";
 import SocialButtonGroup from "../components/Buttons";
 import sejatransformador from "../img/sejatransformador.png"
 import Grid from "@mui/system/Unstable_Grid/Grid";
+import { Button } from "@mui/material";
 
 export default function SejaTransformador() {
   return (
@@ -33,6 +34,7 @@ export default function SejaTransformador() {
         </CardContent>
         <CardActions>
           <SocialButtonGroup/>
+          <Button variant="contained" aria-label="Botão voltar para home" color="warning" href="/">Voltar</Button>
         </CardActions>
       </CardActionArea>
     </Card>

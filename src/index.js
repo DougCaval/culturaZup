@@ -1,8 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Navigation from "./routes";
+
+/*
+import Home from "./views/Home";
+import AprendizadoAcimaDoPlano from "./views/AprendizadoAcimaDoPlano";
+*/
+
+
+
+/*
 import AprendizadoAcimaDoPlano from "./views/AprendizadoAcimaDoPlano.js";
 import CustomerLovers from "../src/views/CustomerLovers.js";
-
 import Home from "./views/Home.js";
 import ErreOndeNinguemErrou from "./views/ErreOndeNinguemErrou.js";
 import PropositoDecide from "./views/PropositoDecide.js";
@@ -16,24 +25,11 @@ import SomosNerds from "./views/SomosNerds.js";
 import TimeForaDaCurva from "./views/TimeForaDaCurva.js";
 import VaiQueDaConfia from "./views/VaiQueDaConfia.js";
 import ZupperAjudaZupper from "./views/ZupperAjudaZupper.js";
+*/
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
-    <CustomerLovers />
-    <AprendizadoAcimaDoPlano />
-    <ErreOndeNinguemErrou />
-    <PropositoDecide />
-    <ResolvaOProblemaCerto />
-    <RespeitoEInclusao />
-    <SejaautenticoSeExponha />
-    <SejaTransformador />
-    <SomosColaborativos />
-    <SomosGuardioes />
-    <SomosNerds />
-    <TimeForaDaCurva />
-    <VaiQueDaConfia />
-    <ZupperAjudaZupper />
+   <Navigation/>
   </React.StrictMode>
 );

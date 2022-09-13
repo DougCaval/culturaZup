@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter , Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Home from "../views/Home.js";
 import AprendizadoAcimaDoPlano from "../views/AprendizadoAcimaDoPlano.js";
 import CustomerLovers from "../views/CustomerLovers.js";
@@ -16,26 +17,40 @@ import TimeForaDaCurva from "../views/TimeForaDaCurva.js";
 import VaiQueDaConfia from "../views/VaiQueDaConfia.js";
 import ZupperAjudaZupper from "../views/ZupperAjudaZupper.js";
 
-export default function Routes() {
+export default function Navigation() {
   return (
     <BrowserRouter>
-         
-        <Route path="/" exact component={Home} />
-        <Route path="/aprendizadoacimadoplano" exact component={AprendizadoAcimaDoPlano} />
-        <Route path="/customerLovers" exact component={CustomerLovers} />
-        <Route path="/erreondeninguemerrou" exact component={ErreOndeNinguemErrou} />
-        <Route path="/propositodecide" exact component={PropositoDecide} />
-        <Route path="/resolvaoproblemacerto" exact component={ResolvaOProblemaCerto} />
-        <Route path="/respeitoeicnlusao" exact component={RespeitoEInclusao} />
-        <Route path="/sejaautenticoseexponha" exact component={SejaautenticoSeExponha} />
-        <Route path="/sejatransformador" exact component={SejaTransformador} />
-        <Route path="/somoscolaborativos" exact component={SomosColaborativos} />
-        <Route path="/somosguardioes" exact component={SomosGuardioes} />
-        <Route path="/somosnerds" exact component={SomosNerds} />
-        <Route path="/timeforadacurva" exact component={TimeForaDaCurva}/>
-        <Route path="/vaiquedaconfia" exact component={VaiQueDaConfia} />
-        <Route path="/zupperajudazupper" exact component={ZupperAjudaZupper} />
-      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/aprendizadoacimadoplano"
+          element={<AprendizadoAcimaDoPlano />}
+        />
+        <Route
+          path="/customerlovers"
+          element={<CustomerLovers />}/>
+          <Route 
+          path="/erreondeninguemerrou"
+          element={<ErreOndeNinguemErrou />}
+        />
+        <Route path="/propositodecide" element={<PropositoDecide />} />
+        <Route
+          path="/resolvaoproblemacerto"
+          element={<ResolvaOProblemaCerto />}
+        />
+        <Route path="/respeitoeinclusao" element={<RespeitoEInclusao />} />
+        <Route
+          path="/sejaautenticoseexponha"
+          element={<SejaautenticoSeExponha />}
+        />
+        <Route path="/sejatransformador" element={<SejaTransformador />} />
+        <Route path="/somoscolaborativos" element={<SomosColaborativos />} />
+        <Route path="/somosguardioes" element={<SomosGuardioes />} />
+        <Route path="/somosnerds" element={<SomosNerds />} />
+        <Route path="/timeforadacurva" element={<TimeForaDaCurva />} />
+        <Route path="/vaiquedaconfia" element={<VaiQueDaConfia />} />
+        <Route path="/zupperajudazupper" element={<ZupperAjudaZupper />} />
+      </Routes>
     </BrowserRouter>
   );
-  }
+}

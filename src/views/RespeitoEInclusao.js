@@ -6,6 +6,8 @@ import { CardActionArea, CardActions } from "@mui/material";
 import SocialButtonGroup from "../components/Buttons";
 import respeitoeinclusao from "../img/respeitoeinclusao.png"
 import Grid from "@mui/system/Unstable_Grid/Grid";
+import { Button } from "@mui/material";
+
 
 export default function RespeitoEInclusao() {
   return (
@@ -38,6 +40,7 @@ export default function RespeitoEInclusao() {
         </CardContent>
         <CardActions>
         <SocialButtonGroup/>
+        <Button variant="contained" aria-label="Botão voltar para home" color="warning" href="/">Voltar</Button>
       </CardActions>
       </CardActionArea>
     </Card>

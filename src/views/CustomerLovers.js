@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea, CardActions, Grid } from "@mui/material";
 import customerlovers from "../img/customerlovers.png";
 import SocialButtonGroup from "../components/Buttons";
+import { Button } from "@mui/material";
 
 export default function CustomerLovers() {
   return (
@@ -28,6 +29,7 @@ export default function CustomerLovers() {
           </CardContent>
           <CardActions>
             <SocialButtonGroup />
+            <Button variant="contained" aria-label="Botão voltar para home" color="warning" href="/">Voltar</Button>
           </CardActions>
         </CardActionArea>
       </Card>

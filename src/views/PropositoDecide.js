@@ -6,6 +6,7 @@ import { CardActionArea, CardActions } from "@mui/material";
 import SocialButtonGroup from "../components/Buttons";
 import propositodecide from "../img/propositodecide.png"
 import Grid from "@mui/system/Unstable_Grid/Grid";
+import { Button } from "@mui/material";
 
 export default function PropositoDecide() {
   return (
@@ -28,6 +29,7 @@ export default function PropositoDecide() {
         </CardContent>
         <CardActions>
           <SocialButtonGroup/>
+          <Button variant="contained" aria-label="Botão voltar para home" color="warning" href="/">Voltar</Button>
         </CardActions>
       </CardActionArea>
     </Card>

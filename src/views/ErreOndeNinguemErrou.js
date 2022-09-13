@@ -6,6 +6,7 @@ import { CardActionArea, CardActions } from "@mui/material";
 import SocialButtonGroup from "../components/Buttons";
 import erreondeninguemerrou from "../img/erreondeninguemerrou.png"
 import Grid from "@mui/system/Unstable_Grid/Grid";
+import { Button } from "@mui/material";
 
 
 export default function ErreOndeNinguemErrou() {
@@ -34,6 +35,7 @@ export default function ErreOndeNinguemErrou() {
         </CardContent>
         <CardActions>
          <SocialButtonGroup/>
+         <Button variant="contained" aria-label="Botão voltar para home" color="warning" href="/">Voltar</Button>
         </CardActions>
       </CardActionArea>
     </Card>

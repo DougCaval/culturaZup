@@ -3,6 +3,11 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import CultureItemsList from "../components/List";
+import Grid from "@mui/system/Unstable_Grid/Grid";
+
+
+
 
 
 export default function Home() {
@@ -16,6 +21,9 @@ export default function Home() {
           </Typography>
         </Toolbar>
       </AppBar>
+        <Grid    container spacing={1} justifyContent="center" paddingTop="30px" paddingBottom="30px" >
+      <CultureItemsList/>
+      </Grid>
     </Box>
    
   );
