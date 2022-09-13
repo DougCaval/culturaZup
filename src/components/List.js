@@ -30,7 +30,7 @@ import { Button } from "@mui/material";
 
 export default function CultureItemsList() {
   return (
-    <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+    <List sx={{ width: "100%", maxWidth: 800, bgcolor: "background.paper" }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar >
           <Avatar alt="Aprendizado acima do plano" >
